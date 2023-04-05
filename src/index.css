@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+#navbar-animmenu {
+	background: #5161ce;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	padding: 10px 0px;
+  width: 100%;
+}
+#navbar-animmenu ul{
+	margin-left: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#navbar-animmenu li, #navbar-animmenu p {
+	list-style-type: none;
+	float: left;
+  padding: 5px;
+}
+
+#navbar-animmenu ul li a, #navbar-animmenu ul p a{
+	color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 45px;
+    display: block;
+    padding: 0px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbar-animmenu ul p a{
+  font-size: 20px;
+  color: white;
+}
+
+#navbar-animmenu ul li a:hover, #navbar-animmenu ul p a:hover{
+	background-color: white;
+  color: #5161ce;
+  border-radius: 1rem;
 }
