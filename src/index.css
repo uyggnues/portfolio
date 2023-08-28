@@ -64,4 +64,26 @@ body{
 .about-me, .my-work{
 	border: 1px solid white;
 	width: 40%;
+	cursor: pointer;
+	transition: .4s ease-in;
+	z-index: 1;
+	position: relative;
+}
+.about-me:hover, .my-work:hover{
+	box-shadow: 10px 16px 0px #ff96ad;
+	top: -5px;
+	left: -5px;
+}
+.about-me::before, .my-work::before, .about-me::after, .my-work::after{
+	position: absolute;
+	content: '';
+	z-index: -1;
+}
+.about-me h1, .my-work h1{
+	font-size: 36px;
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	color: white;
+	text-decoration: underline;
 }
